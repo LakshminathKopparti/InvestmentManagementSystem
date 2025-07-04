@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Portfolio Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Investment Portfolio Management System</h1>
+
+    <h3>User Management</h3>
+    <form action="add_user.php" method="post">
+        <button type="submit">Add New User</button>
+    </form>
+    
+    <form action="view_users.php" method="get">
+        <button type="submit">View Users</button>
+    </form>
+
+
+        <h3>Investment Management</h3>
+    
+        <form action="add_investment.php" method="post">
+            <button type="submit">Add New Investment</button>
+        </form>
+    
+        <form action="view_investments.php" method="get">
+            <button type="submit">View Investments</button>
+        </form>
+
+        <h3>Transaction Management</h3>
+
+        <form action="add_transaction.php" method="post">
+            <button type="submit">Add New Transaction</button>
+        </form>
+    
+        <form action="view_transactions.php" method="get">
+            <button type="submit">View Transactions</button>
+        </form>
+
+        <h3>Portfolio Management</h3>
+
+      <form action="update_form.php" method="get">
+     <button type="submit">Update Current Value</button>
+  </form>
+
+<form action="view_performance.php" method="get">
+    <button type="submit">View Portfolio Performance</button>
+</form>
+
+<h3>Financial Advisors Management</h3>
+
+<form action="add_advisor.php" method="get">
+    <button type="submit">Add Financial Advisor</button>
+</form>
+
+<form action="view_advisors.php" method="get">
+    <button type="submit">View Financial Advisors</button>
+</form> 
+
+<h3>User Advisor Management</h3>
+
+    <form action="assign_advisor.php" method="get">
+        <button type="submit">Assign Advisor to Investor</button>
+    </form>
+
+    <form action="view_user_advisor.php" method="get">
+        <button type="submit">View Assigned Advisors</button>
+    </form>
+
+    <h3>Payment History Management</h3>
+
+    <form action="update_payment_method.php" method="get">
+        <button type="submit">Update Payment Method</button>
+    </form>
+
+    <form action="view_payment_history.php" method="get">
+        <button type="submit">View Payment History</button>
+    </form>
+
+    <h3>Reports and Insights</h3>
+    <form action="top_investor.php" method="get">
+        <button type="submit">Top Investor</button>
+    </form>
+
+    <form action="most_profitable_investor.php" method="get">
+        <button type="submit">Most Profitable Investor</button>
+    </form>
+
+    <form action="top_10_investments.php" method="get">
+        <button type="submit">Top 10 Investments</button>
+    </form>
+
+    <form action="best_advisor.php" method="get">
+        <button type="submit">Best Advisor</button>
+    </form>
+
+    <form action="most_popular_investment.php" method="get">
+        <button type="submit">Most Popular Investment</button>
+    </form>
+
+    <form action="underperforming_portfolios.php" method="get">
+        <button type="submit">Underperforming Portfolios</button>
+    </form>
+    <h3>View User Investments</h3>
+<form action="user_investments.php" method="get">
+    <label for="user_id">Enter User ID:</label>
+    <input type="number" id="user_id" name="user_id" required>
+    <button type="submit">View Investments</button>
+</form>
+
+
+</body>
+</html>

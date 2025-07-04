@@ -1,0 +1,129 @@
+/* Global Styles */
+body {
+    font-family: 'Lora', serif; /* Elegant serif font for a professional feel */
+    margin: 0;
+    padding: 0;
+    background: url('./images/img1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white; /* Changed font color to white */
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Page Header */
+h1 {
+    text-align: center;
+    padding: 30px;
+    margin: 0;
+    font-size: 3rem;
+    color: white; /* Font color is already white */
+    background: rgba(0, 0, 0, 0.8); /* Darker background for better contrast */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif; /* Modern sans-serif font for headers */
+}
+
+/* Section Headers */
+h3 {
+    color: white; /* Changed font color to white */
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 5px;
+    background: #ff6f61; /* Soft coral color for the underline */
+    margin: 10px auto 0;
+    border-radius: 3px;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.15); /* Slightly less transparent for better readability */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Softer border */
+    border-radius: 12px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1s ease-in-out;
+    margin-bottom: 40px;
+    color: white; /* Ensures container text is white */
+}
+
+/* Form and Buttons */
+form {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+button {
+    background: linear-gradient(135deg, #ff6f61, #ff9b8b); /* Coral gradient */
+    color: white; /* Font color is already white */
+    border: none;
+    padding: 14px 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px; /* Rounded buttons */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+button:active {
+    transform: translateY(1px); /* Slight effect when clicked */
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+}
